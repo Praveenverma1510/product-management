@@ -39,7 +39,7 @@ export const createProduct = async (productData) => {
     };
 
     const response = await api.post('/products', productData);
-    // console.log('API Response:', response.data);
+    console.log('API Response:', response.data);
 
     return mockProduct;
   } catch (error) {
